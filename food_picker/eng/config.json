@@ -1,0 +1,24 @@
+{
+    "foods": [
+        {
+            "name": "Spaghetti Carbonara",
+            "ingredients": ["spaghetti", "egg", "parmesan", "pancetta", "pepper"]
+        },
+        {
+            "name": "Chicken Tenders",
+            "ingredients": ["eggs", "chicken", "flour"]
+        },
+        {
+            "name": "Chicken Curry",
+            "ingredients": ["chicken", "curry powder", "onion", "garlic", "ginger", "tomato"]
+        },
+        {
+            "name": "Caesar Salad",
+            "ingredients": ["romaine lettuce", "croutons", "parmesan", "chicken", "caesar dressing"]
+        },
+        {
+            "name": "Beef Tacos",
+            "ingredients": ["beef", "taco shells", "lettuce", "tomato", "cheese", "sour cream"]
+        }
+    ]
+}

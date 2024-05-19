@@ -1,0 +1,24 @@
+{
+    "movies": [
+        {
+            "name": "Inception",
+            "genres": ["Action", "Adventure", "Sci-Fi"],
+            "description": "A thief who enters the dreams of others to steal their secrets from their subconscious."
+        },
+        {
+            "name": "The Shawshank Redemption",
+            "genres": ["Drama"],
+            "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+        },
+        {
+            "name": "The Godfather",
+            "genres": ["Crime", "Drama"],
+            "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+        },
+        {
+            "name": "The Dark Knight",
+            "genres": ["Action", "Crime", "Drama"],
+            "description": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham."
+        }
+    ]
+}

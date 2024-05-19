@@ -1,0 +1,363 @@
+{
+    "movies": [
+        {
+            "name": "The Shawshank Redemption",
+            "genres": [
+                "Drama"
+            ],
+            "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
+        },
+        {
+            "name": "The Godfather",
+            "genres": [
+                "Crime",
+                "Drama"
+            ],
+            "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+        },
+        {
+            "name": "The Dark Knight",
+            "genres": [
+                "Action",
+                "Crime",
+                "Drama"
+            ],
+            "description": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham."
+        },
+        {
+            "name": "Master and Commander: The Far Side of the World",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Prisoners",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "fall guy",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "spaceman",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Stranger than Fiction",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "the wind",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "moneyball",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "9 yards",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Meet Joe Black",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "godzilla 0",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "the roadhouse",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "prophecy",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "gangs of new york",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "king of comedy",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Only Lovers Left Alive",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "killer",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Near Dark",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "goonies",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "re-animator",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Escape from New York",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "breakfast club",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "They Live",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "neverending story",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Heathers",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "A Christmas Story",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Ferris Bueller's Day Off",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "oblivion",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "reign of fire",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "belle аниме",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "люксембург люксембург",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "weynes world",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Война роз",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "12 monkeys",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "larger than life",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "saints from boondock",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "the machinist",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "The Book of Eli",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "the empty man",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Lost in Translation",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "last flag flying",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "millennium actress",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "tokyo godfathers",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "The Hudsucker Prox",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "who framed roger rabit",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "The Frighteners",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Planes, Trains and Automobiles",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Midnight Run",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Paul",
+            "genres": ["Comedy"],
+            "description": "Simon Pegg Comedy"
+        },
+        {
+            "name": "28 days later",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Dictator",
+            "genres": ["Comedy"],
+            "description": "Sasha Baron comedy"
+        },
+        {
+            "name": "galaxy quest",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Hearts and Sould",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "an american tail",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Billy Medison",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "THE ROCKETEER",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "enchanted",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "STRIPES",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "GOOD MORNING, VIETNAM",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "BILL & TED'S EXCELLENT ADVENTURE",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "paprika",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "MULAN",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "NATIONAL LAMPOON'S VACATION",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "OFFICE SPACE",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "The Gods Must Be Crazy",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Buffy",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Pete & Pete",
+            "genres": [],
+            "description": ""
+        },
+        {
+            "name": "Field of Dreams",
+            "genres": [],
+            "description": ""
+        }
+    ]
+}

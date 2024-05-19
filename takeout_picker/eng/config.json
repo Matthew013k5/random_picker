@@ -1,0 +1,20 @@
+{
+    "foods": [
+        {
+            "name": "joes place",
+            "type": ["burger", "sushi"]
+        },
+        {
+            "name": "mcdonalds",
+            "type": "burger"
+        },
+        {
+            "name": "shawarma",
+            "type": "shawarma"
+        },
+        {
+            "name": "чінчін",
+            "type": ["ramen", "bowl"]
+        }
+    ]
+}
