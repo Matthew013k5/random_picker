@@ -1,98 +1,69 @@
 {
     "movies": [
         {
-            "name": "The Shawshank Redemption",
-            "genres": [
-                "Drama"
-            ],
-            "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
-        },
-        {
-            "name": "The Godfather",
-            "genres": [
-                "Crime",
-                "Drama"
-            ],
-            "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
-        },
-        {
-            "name": "The Dark Knight",
-            "genres": [
-                "Action",
-                "Crime",
-                "Drama"
-            ],
-            "description": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham."
-        },
-        {
             "name": "Master and Commander: The Far Side of the World",
-            "genres": [],
+            "genres": ["Adventure"],
             "description": ""
         },
         {
             "name": "Prisoners",
-            "genres": [],
-            "description": ""
+            "genres": ["Thriller"],
+            "description": "The film follows the abduction of two young girls in Pennsylvania and the subsequent search for the perpetrator by the police. After police arrest a young suspect and release him, the father of one of the daughters takes matters into his own hands."
         },
         {
             "name": "fall guy",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "ryan reinolds 2024 movie about stunt"
         },
         {
             "name": "spaceman",
-            "genres": [],
-            "description": ""
+            "genres": ["Drama"],
+            "description": "adam sandler space drama"
         },
         {
             "name": "Stranger than Fiction",
-            "genres": [],
-            "description": ""
+            "genres": ["Drama"],
+            "description": "will farell hears voices"
         },
         {
             "name": "the wind",
-            "genres": [],
-            "description": ""
+            "genres": ["Horror"],
+            "description": "Western Horror 2018"
         },
         {
             "name": "moneyball",
-            "genres": [],
-            "description": ""
+            "genres": ["Drama"],
+            "description": "Movie about baseball"
         },
         {
             "name": "9 yards",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy"],
+            "description": "bruce willis and matthew perry comedy"
         },
         {
             "name": "Meet Joe Black",
-            "genres": [],
-            "description": ""
+            "genres": ["Drama"],
+            "description": "Bradd Pitt plays death"
         },
         {
             "name": "godzilla 0",
-            "genres": [],
+            "genres": ["Action"],
             "description": ""
         },
         {
             "name": "the roadhouse",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "jake gyllenhaal"
         },
         {
             "name": "prophecy",
-            "genres": [],
-            "description": ""
+            "genres": ["Thriller"],
+            "description": "supernatural like"
         },
         {
             "name": "gangs of new york",
-            "genres": [],
-            "description": ""
-        },
-        {
-            "name": "king of comedy",
-            "genres": [],
-            "description": ""
+            "genres": ["Action", "Drama"],
+            "description": "scorsese criminal drama"
         },
         {
             "name": "Only Lovers Left Alive",
@@ -101,162 +72,162 @@
         },
         {
             "name": "killer",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "Michael Fassbender plays killer"
         },
         {
             "name": "Near Dark",
-            "genres": [],
-            "description": ""
+            "genres": ["Horror"],
+            "description": "Western Style Horror 1987"
         },
         {
             "name": "goonies",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy"],
+            "description": "kids looking for treasure"
         },
         {
             "name": "re-animator",
-            "genres": [],
-            "description": ""
+            "genres": ["Horror"],
+            "description": "classical horror about scientist who reanimates dead"
         },
         {
             "name": "Escape from New York",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "movie that inspired metal gear"
         },
         {
             "name": "breakfast club",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy"],
+            "description": "kids left in detention"
         },
         {
             "name": "They Live",
-            "genres": [],
+            "genres": ["Sci-Fi"],
             "description": ""
         },
         {
             "name": "neverending story",
-            "genres": [],
+            "genres": ["fantasy"],
             "description": ""
         },
         {
             "name": "Heathers",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "A Christmas Story",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "Ferris Bueller's Day Off",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "oblivion",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "tom cruise post apocalypse"
         },
         {
             "name": "reign of fire",
-            "genres": [],
-            "description": ""
+            "genres": ["Action", "fantasy"],
+            "description": "dragons captured world"
         },
         {
-            "name": "belle аниме",
-            "genres": [],
+            "name": "belle",
+            "genres": ["anime"],
             "description": ""
         },
         {
             "name": "люксембург люксембург",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy", "Drama"],
+            "description": "Luxembourge. two brother looks for their father"
         },
         {
             "name": "weynes world",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy"],
+            "description": "michael myers comedy"
         },
         {
-            "name": "Война роз",
-            "genres": [],
-            "description": ""
+            "name": "The War of the Roses",
+            "genres": ["Drama", "Comedy"],
+            "description": "Bad divorce"
         },
         {
             "name": "12 monkeys",
-            "genres": [],
-            "description": ""
+            "genres": ["Drama"],
+            "description": "bruce williw and bradd pitt"
         },
         {
             "name": "larger than life",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy"],
+            "description": "man get elephant as inheritance"
         },
         {
             "name": "saints from boondock",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "norman reedus and william dafoe"
         },
         {
             "name": "the machinist",
-            "genres": [],
-            "description": ""
+            "genres": ["Thriller"],
+            "description": "christian bale thriller"
         },
         {
             "name": "The Book of Eli",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "Post apocalypse"
         },
         {
             "name": "the empty man",
-            "genres": [],
+            "genres": ["Horror"],
             "description": ""
         },
         {
             "name": "Lost in Translation",
-            "genres": [],
+            "genres": ["Drama"],
             "description": ""
         },
         {
             "name": "last flag flying",
-            "genres": [],
-            "description": ""
+            "genres": ["Drama"],
+            "description": "drama about former soldiers reunited"
         },
         {
             "name": "millennium actress",
-            "genres": [],
+            "genres": ["anime"],
             "description": ""
         },
         {
             "name": "tokyo godfathers",
-            "genres": [],
+            "genres": ["anime"],
             "description": ""
         },
         {
-            "name": "The Hudsucker Prox",
-            "genres": [],
+            "name": "The Hudsucker Proxy",
+            "genres": ["Drama"],
             "description": ""
         },
         {
             "name": "who framed roger rabit",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "The Frighteners",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy"],
+            "description": "michael j fox sees ghosts"
         },
         {
             "name": "Planes, Trains and Automobiles",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "Midnight Run",
-            "genres": [],
+            "genres": ["Action", "Comedy"],
             "description": ""
         },
         {
@@ -266,7 +237,7 @@
         },
         {
             "name": "28 days later",
-            "genres": [],
+            "genres": ["Horror"],
             "description": ""
         },
         {
@@ -276,88 +247,83 @@
         },
         {
             "name": "galaxy quest",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "Hearts and Sould",
-            "genres": [],
-            "description": ""
+            "genres": ["Comedy", "Drama"],
+            "description": "robert downey jr sees ghosts"
         },
         {
             "name": "an american tail",
-            "genres": [],
-            "description": ""
+            "genres": ["Cartoon"],
+            "description": "mouse in new york"
         },
         {
             "name": "Billy Medison",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "THE ROCKETEER",
-            "genres": [],
-            "description": ""
+            "genres": ["Action"],
+            "description": "superhero with jetpack"
         },
         {
             "name": "enchanted",
-            "genres": [],
+            "genres": ["fantasy", "Comedy"],
             "description": ""
         },
         {
             "name": "STRIPES",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "GOOD MORNING, VIETNAM",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "BILL & TED'S EXCELLENT ADVENTURE",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "paprika",
-            "genres": [],
+            "genres": ["anime"],
             "description": ""
         },
         {
             "name": "MULAN",
-            "genres": [],
+            "genres": ["Cartoon"],
             "description": ""
         },
         {
             "name": "NATIONAL LAMPOON'S VACATION",
-            "genres": [],
+            "genres": ["Cartoon"],
             "description": ""
         },
         {
             "name": "OFFICE SPACE",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "The Gods Must Be Crazy",
-            "genres": [],
-            "description": ""
-        },
-        {
-            "name": "Buffy",
-            "genres": [],
-            "description": ""
-        },
-        {
-            "name": "Pete & Pete",
-            "genres": [],
+            "genres": ["Comedy"],
             "description": ""
         },
         {
             "name": "Field of Dreams",
-            "genres": [],
+            "genres": ["Drama"],
             "description": ""
+        },
+        {
+            "name": "Falling Down",
+            "genres": ["Drama"],
+            "description": "michael douglas"
         }
     ]
 }
