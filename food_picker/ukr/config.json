@@ -2,19 +2,39 @@
     "foods": [
         {
             "name": "Спагеті Карбонара",
-            "ingredients": ["спагеті", "яйце", "пармезан", "панчетта", "перець"]
+            "ingredients": ["спагеті", "яйце", "пармезан", "панчетта", "перець"],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Курка по-куррі",
-            "ingredients": ["курка", "куркума", "цибуля", "часник", "імбир", "помідор"]
+            "ingredients": ["курка", "куркума", "цибуля", "часник", "імбир", "помідор"],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Цезар з куркою",
-            "ingredients": ["салат романо", "грінки", "пармезан", "курка", "соус цезар"]
+            "ingredients": ["салат романо", "грінки", "пармезан", "курка", "соус цезар"],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Бефстроганов",
-            "ingredients": ["бефстроганов", "перець", "цибуля", "гриби", "вершки"]
+            "ingredients": ["бефстроганов", "перець", "цибуля", "гриби", "вершки"],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         }
     ]
 }

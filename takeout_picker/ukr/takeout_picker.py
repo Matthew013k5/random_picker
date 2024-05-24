@@ -6,6 +6,21 @@ def load_config(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
+def save_config(file_path, config):
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(config, file, indent=4, ensure_ascii=False)
+
+def delete_food(config, food_name):
+    foods = config['foods']
+    for food in foods:
+        if food['name'] == food_name:
+            foods.remove(food)
+            return True
+    return False
+
+def add_food(config, food):
+    config['foods'].append(food)
+
 def main():
     # Отримання каталогу поточного скрипта
     script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -20,7 +35,7 @@ def main():
 
     while True:
         if last_choice is None:
-            choice = input("Бажаєте (1) вибрати випадковий вид їжі чи (2) відфільтрувати за видом їжі? Введіть 1 або 2: ")
+            choice = input("Бажаєте (1) вибрати випадковий вид їжі, (2) відфільтрувати за видом їжі, (3) видалити їжу чи (4) додати їжу? Введіть 1, 2, 3 або 4: ")
         else:
             choice = last_choice
 
@@ -47,11 +62,30 @@ def main():
                 selected_foods.append(selected_food)
                 print(f"Обрана їжа: {selected_food['name']}")
                 last_choice = '2'
+        elif choice == '3':
+            food_name = input("Введіть назву їжі, яку ви хочете видалити: ").strip()
+            if delete_food(config, food_name):
+                save_config(config_path, config)
+                print(f"Їжу '{food_name}' успішно видалено.")
+            else:
+                print(f"Їжу '{food_name}' не знайдено.")
+            last_choice = '3'
+        elif choice == '4':
+            food_name = input("Введіть назву їжі, яку ви хочете додати: ").strip()
+            food_type = input("Введіть тип їжі: ").strip().lower()
+            new_food = {
+                'name': food_name,
+                'type': food_type
+            }
+            add_food(config, new_food)
+            save_config(config_path, config)
+            print(f"Їжу '{food_name}' успішно додано.")
+            last_choice = '4'
         else:
-            print("Невірний вибір. Будь ласка, введіть 1 або 2.")
+            print("Невірний вибір. Будь ласка, введіть 1, 2, 3 або 4.")
             last_choice = None
         
-        continue_search = input("Бажаєте продовжити пошук? (так/ні): ").strip().lower()
+        continue_search = input("Бажаєте продовжити? (так/ні): ").strip().lower()
         if continue_search != 'так':
             break
 

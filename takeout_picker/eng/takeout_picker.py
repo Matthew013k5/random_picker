@@ -6,6 +6,21 @@ def load_config(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
+def save_config(file_path, config):
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(config, file, indent=4, ensure_ascii=False)
+
+def delete_food(config, food_name):
+    foods = config['foods']
+    for food in foods:
+        if food['name'] == food_name:
+            foods.remove(food)
+            return True
+    return False
+
+def add_food(config, food):
+    config['foods'].append(food)
+
 def main():
     # Get the directory of the current script
     script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -20,7 +35,7 @@ def main():
 
     while True:
         if last_choice is None:
-            choice = input("Would you like to (1) pick a random type of food or (2) filter by type of food? Enter 1 or 2: ")
+            choice = input("Would you like to (1) pick a random type of food, (2) filter by type of food, (3) delete a food, or (4) add a food? Enter 1, 2, 3, or 4: ")
         else:
             choice = last_choice
 
@@ -47,11 +62,30 @@ def main():
                 selected_foods.append(selected_food)
                 print(f"Selected food: {selected_food['name']}")
                 last_choice = '2'
+        elif choice == '3':
+            food_name = input("Enter the name of the food you want to delete: ").strip()
+            if delete_food(config, food_name):
+                save_config(config_path, config)
+                print(f"Food '{food_name}' deleted successfully.")
+            else:
+                print(f"Food '{food_name}' not found.")
+            last_choice = '3'
+        elif choice == '4':
+            food_name = input("Enter the name of the food you want to add: ").strip()
+            food_type = input("Enter the type of the food: ").strip().lower()
+            new_food = {
+                'name': food_name,
+                'type': food_type
+            }
+            add_food(config, new_food)
+            save_config(config_path, config)
+            print(f"Food '{food_name}' added successfully.")
+            last_choice = '4'
         else:
-            print("Invalid choice. Please enter 1 or 2.")
+            print("Invalid choice. Please enter 1, 2, 3, or 4.")
             last_choice = None
         
-        continue_search = input("Do you want to continue searching? (yes/no): ").strip().lower()
+        continue_search = input("Do you want to continue? (yes/no): ").strip().lower()
         if continue_search != 'yes':
             break
 

@@ -2,7 +2,10 @@
     "foods": [
         {
             "name": "joes place",
-            "type": ["burger", "sushi"]
+            "type": [
+                "burger",
+                "sushi"
+            ]
         },
         {
             "name": "mcdonalds",
@@ -14,7 +17,10 @@
         },
         {
             "name": "чінчін",
-            "type": ["ramen", "bowl"]
+            "type": [
+                "ramen",
+                "bowl"
+            ]
         }
     ]
 }

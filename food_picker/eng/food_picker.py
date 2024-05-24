@@ -6,12 +6,19 @@ def load_config(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
+def save_config(file_path, config):
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(config, file, indent=4, ensure_ascii=False)
+
 def filter_foods_by_ingredients(foods, selected_ingredients):
     filtered_foods = []
     for food in foods:
         if all(ingredient in food['ingredients'] for ingredient in selected_ingredients):
             filtered_foods.append(food)
     return filtered_foods
+
+def add_food(config, food):
+    config['foods'].append(food)
 
 def main():
     # Get the directory of the current script
@@ -27,7 +34,7 @@ def main():
 
     while True:
         if last_choice is None:
-            choice = input("Would you like to (1) get a random food or (2) filter by ingredients? Enter 1 or 2: ")
+            choice = input("Would you like to (1) get a random food, (2) filter by ingredients, or (3) add a food? Enter 1, 2, or 3: ")
         else:
             choice = last_choice
 
@@ -40,6 +47,7 @@ def main():
             selected_foods.append(selected_food)
             print(f"Selected Food: {selected_food['name']}")
             print(f"Main Ingredients: {', '.join(selected_food['ingredients'])}")
+            print(f"Description: {'; '.join(selected_food['description'])}")
             last_choice = '1'
         elif choice == '2':
             selected_ingredients = input("Enter ingredients to filter by (comma separated): ").split(',')
@@ -56,12 +64,28 @@ def main():
                 selected_foods.append(selected_food)
                 print(f"Selected Food: {selected_food['name']}")
                 print(f"Main Ingredients: {', '.join(selected_food['ingredients'])}")
+                print(f"Description: {'; '.join(selected_food['description'])}")
                 last_choice = '2'
+        elif choice == '3':
+            food_name = input("Enter the name of the food you want to add: ").strip()
+            food_ingredients = input("Enter the ingredients of the food (comma-separated): ").strip().split(',')
+            food_ingredients = [ingredient.strip().lower() for ingredient in food_ingredients]
+            food_description = input("Enter the description of the food (steps separated by semicolons): ").strip().split(';')
+            food_description = [step.strip() for step in food_description]
+            new_food = {
+                'name': food_name,
+                'ingredients': food_ingredients,
+                'description': food_description
+            }
+            add_food(config, new_food)
+            save_config(config_path, config)
+            print(f"Food '{food_name}' added successfully.")
+            last_choice = '3'
         else:
-            print("Invalid choice. Please enter 1 or 2.")
+            print("Invalid choice. Please enter 1, 2, or 3.")
             last_choice = None
         
-        continue_search = input("Do you want to continue searching? (yes/no): ").strip().lower()
+        continue_search = input("Do you want to continue searching or adding? (yes/no): ").strip().lower()
         if continue_search != 'yes':
             break
         

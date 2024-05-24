@@ -18,6 +18,9 @@ def delete_movie(config, movie_name):
             return True
     return False
 
+def add_movie(config, movie):
+    config['movies'].append(movie)
+
 def main():
     # Get the directory of the current script
     script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -32,7 +35,7 @@ def main():
 
     while True:
         if last_choice is None:
-            choice = input("Would you like to (1) pick a random movie, (2) filter by genre, or (3) delete a movie? Enter 1, 2, or 3: ")
+            choice = input("Would you like to (1) pick a random movie, (2) filter by genre, (3) delete a movie, or (4) add a movie? Enter 1, 2, 3, or 4: ")
         else:
             choice = last_choice
 
@@ -69,11 +72,25 @@ def main():
             else:
                 print(f"Movie '{movie_name}' not found.")
             last_choice = '3'
+        elif choice == '4':
+            movie_name = input("Enter the name of the movie you want to add: ").strip()
+            movie_description = input("Enter the description of the movie: ").strip()
+            movie_genres = input("Enter the genres of the movie (comma-separated): ").strip().split(',')
+            movie_genres = [genre.strip().capitalize() for genre in movie_genres]
+            new_movie = {
+                'name': movie_name,
+                'description': movie_description,
+                'genres': movie_genres
+            }
+            add_movie(config, new_movie)
+            save_config(config_path, config)
+            print(f"Movie '{movie_name}' added successfully.")
+            last_choice = '4'
         else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
+            print("Invalid choice. Please enter 1, 2, 3, or 4.")
             last_choice = None
         
-        continue_search = input("Do you want to continue searching or deleting? (yes/no): ").strip().lower()
+        continue_search = input("Do you want to continue? (yes/no): ").strip().lower()
         if continue_search != 'yes':
             break
 

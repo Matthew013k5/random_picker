@@ -18,6 +18,9 @@ def delete_movie(config, movie_name):
             return True
     return False
 
+def add_movie(config, movie):
+    config['movies'].append(movie)
+
 def main():
     # Отримання каталогу поточного скрипта
     script_dir = os.path.dirname(os.path.realpath(__file__))
@@ -32,7 +35,7 @@ def main():
 
     while True:
         if last_choice is None:
-            choice = input("Бажаєте (1) вибрати випадковий фільм, (2) відфільтрувати за жанром, чи (3) видалити фільм? Введіть 1, 2 або 3: ")
+            choice = input("Бажаєте (1) вибрати випадковий фільм, (2) відфільтрувати за жанром, (3) видалити фільм, чи (4) додати фільм? Введіть 1, 2, 3 або 4: ")
         else:
             choice = last_choice
 
@@ -69,11 +72,25 @@ def main():
             else:
                 print(f"Фільм '{movie_name}' не знайдено.")
             last_choice = '3'
+        elif choice == '4':
+            movie_name = input("Введіть назву фільму, який ви хочете додати: ").strip()
+            movie_description = input("Введіть опис фільму: ").strip()
+            movie_genres = input("Введіть жанри фільму (розділені комами): ").strip().split(',')
+            movie_genres = [genre.strip().capitalize() for genre in movie_genres]
+            new_movie = {
+                'name': movie_name,
+                'description': movie_description,
+                'genres': movie_genres
+            }
+            add_movie(config, new_movie)
+            save_config(config_path, config)
+            print(f"Фільм '{movie_name}' успішно додано.")
+            last_choice = '4'
         else:
-            print("Невірний вибір. Будь ласка, введіть 1, 2 або 3.")
+            print("Невірний вибір. Будь ласка, введіть 1, 2, 3 або 4.")
             last_choice = None
         
-        continue_search = input("Бажаєте продовжити пошук чи видалення? (так/ні): ").strip().lower()
+        continue_search = input("Бажаєте продовжити? (так/ні): ").strip().lower()
         if continue_search != 'так':
             break
 

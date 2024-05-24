@@ -2,23 +2,78 @@
     "foods": [
         {
             "name": "Spaghetti Carbonara",
-            "ingredients": ["spaghetti", "egg", "parmesan", "pancetta", "pepper"]
+            "ingredients": [
+                "spaghetti",
+                "egg",
+                "parmesan",
+                "pancetta",
+                "pepper"
+            ],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Chicken Tenders",
-            "ingredients": ["eggs", "chicken", "flour"]
+            "ingredients": [
+                "eggs",
+                "chicken",
+                "flour"
+            ],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Chicken Curry",
-            "ingredients": ["chicken", "curry powder", "onion", "garlic", "ginger", "tomato"]
+            "ingredients": [
+                "chicken",
+                "curry powder",
+                "onion",
+                "garlic",
+                "ginger",
+                "tomato"
+            ],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Caesar Salad",
-            "ingredients": ["romaine lettuce", "croutons", "parmesan", "chicken", "caesar dressing"]
+            "ingredients": [
+                "romaine lettuce",
+                "croutons",
+                "parmesan",
+                "chicken",
+                "caesar dressing"
+            ],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         },
         {
             "name": "Beef Tacos",
-            "ingredients": ["beef", "taco shells", "lettuce", "tomato", "cheese", "sour cream"]
+            "ingredients": [
+                "beef",
+                "taco shells",
+                "lettuce",
+                "tomato",
+                "cheese",
+                "sour cream"
+            ],
+            "description": [
+                "1.boil spaghetti",
+                "2.add salt and pepper",
+                "3.add cheese"
+            ]
         }
     ]
 }
